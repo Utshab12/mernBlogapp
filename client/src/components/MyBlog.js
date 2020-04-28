@@ -102,12 +102,12 @@ class MyBlog extends Component {
 
             <React.Fragment>
              <Navbar />
-            <Link to='createblog'style={{marginLeft:"650px", marginTop: "50px", paddingLeft: "50px"}}><Button>Publish New Blog</Button></Link>
+            <Link to='createblog'style={{marginTop: "50px", paddingLeft: "50px"}}><Button>Publish New Blog</Button></Link>
               
               {this.state.blogs.map((blog)=>
                 <div>
-                  <Button style={{marginLeft:"700px", marginTop: "100px"}} onClick={()=>{this.deleteblog(blog._id)}}>Delete</Button>
-                <Link to={'/editblog/'+blog._id}  params={{blog: blog._id}}><Button style={{marginTop: "50px", marginTop: "100px"}}>Edit</Button></Link>
+                  <Button style={{marginTop: "100px"}} onClick={()=>{this.deleteblog(blog._id)}}>Delete</Button>
+                <Link to={'/editblog/'+blog._id}  params={{blog: blog._id}}><Button style={{marginTop: "100px"}}>Edit</Button></Link>
                 <Blog key={blog._id} data={blog} />
             
                 </div>

@@ -69,8 +69,8 @@ class CreateBlog extends Component {
              <Navbar />
             
               <Row style={{marginTop:"40px" }}>
-              <Col md ={2}></Col>
-              <Col md={8} >
+              <Col sm ={2}></Col>
+              <Col sm={8} >
 
               <Form>
                 <h1>Create Your Blog</h1>

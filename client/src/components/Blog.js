@@ -32,8 +32,8 @@ class Blog extends Component{
     return(
       <div >
         <Row style={{marginTop:"20px", }}>
-          <Col md ={2}></Col>
-          <Col md={8} >
+          <Col sm ={2}></Col>
+          <Col sm={8} >
        
             <Card  >
             <CardImg top style={{ height: "200px", width:"100%"}} src={`https://blogserver1.herokuapp.com/${this.props.data.image}`} alt="Card image cap" />

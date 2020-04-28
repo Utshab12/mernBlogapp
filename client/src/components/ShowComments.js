@@ -34,8 +34,8 @@ class ShowComments extends Component{
     return(
       <div >
         <Row style={{ marginTop: "10px"}} >
-          <Col md ={2}></Col>
-          <Col md={8} >
+          <Col sm ={2}></Col>
+          <Col sm ={8} >
             <Input value = {this.props.data.comments} />
             <Button style={{float: "right"}} onClick={()=>this.delComment(this.props.data._id)}>Delete</Button> 
           </Col>

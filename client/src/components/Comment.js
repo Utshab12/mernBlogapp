@@ -49,8 +49,8 @@ constructor () {
     return(
       <div >
         <Row>
-          <Col md ={2}></Col>
-          <Col md={8} >
+          <Col sm ={2}></Col>
+          <Col sm ={8} >
             <Input placeholder ="Write comments here" onChange = {(e)=>this.inputChange(e)} /> 
           </Col>
           <Button onClick={()=>this.submitComment()}>Save</Button>

@@ -88,8 +88,8 @@ class LoginForm extends Component{
         <div>
       <Navbars />
       <Row>
-        <Col md={4} ></Col>
-        <Col md={4}>
+        <Col sm={4} ></Col>
+        <Col sm={4}>
       <div className="signupformStyle">
       <Form>
         <Label>Email</Label>

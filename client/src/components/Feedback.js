@@ -8,8 +8,8 @@ class Feedback extends Component{
     return(
       <div >
         <Row>
-          <Col md ={2}></Col>
-          <Col md={8} >
+          <Col sm ={2}></Col>
+          <Col sm ={8} >
             <h4>Comments</h4>
             <Input value ="Write comments here"/>
         </Col>

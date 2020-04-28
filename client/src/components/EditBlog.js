@@ -71,8 +71,8 @@ class EditBlog extends Component {
               <Navbar />
             
               <Row style={{marginTop:"30px" }}>
-              <Col md ={2}></Col>
-              <Col md={8} >
+              <Col sm ={2}></Col>
+              <Col sm ={8} >
 
               <Form>
                 <h1>Edit Your Blog</h1>
