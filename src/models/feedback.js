@@ -3,13 +3,7 @@ const mongoose = require('mongoose')
 const feedbackSchema = mongoose.Schema({
   
   comments: {
-    type: String,
-    trim : true,
-    validate(val){
-      if(val.length>500){
-        throw new Error('Comments must be less then 500 characters!')
-      }
-    }
+    type: String
   },
   creator: {
     type: mongoose.Schema.Types.ObjectId,

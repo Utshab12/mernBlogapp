@@ -30,7 +30,8 @@ constructor () {
       let obj = {
         comments: comment
       }
-      axios.post(`https://blogserver1.herokuapp.com/blog/comment/${blogId}`,  obj ,
+      alert(comment)
+      axios.post(`http://localhost:5000/blog/comment/${blogId}`,  obj ,
     {
         headers: {
             'Authorization': localStorage.getItem("token"),

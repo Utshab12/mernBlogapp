@@ -13,7 +13,7 @@ class ShowComments extends Component{
     console.log(userid)
     console.log(userid)
     if(this.props.data.creator === userid ){
-      axios.delete(`https://blogserver1.herokuapp.com/blog/comment/del/${val}`,
+      axios.delete(`http://localhost:5000/blog/comment/del/${val}`,
       {
           headers: {
               'Authorization': localStorage.getItem("token"),
@@ -37,9 +37,15 @@ class ShowComments extends Component{
           <Col sm ={2}></Col>
           <Col sm ={8} >
             <Input value = {this.props.data.comments} />
-            <Button style={{float: "right"}} onClick={()=>this.delComment(this.props.data._id)}>Delete</Button> 
-          </Col>
+            <Button style={{float: "right"}} onClick={()=>this.delComment(this.props.data._id)}>Delete</Button>
+      
+            </Col>
       </Row>
+                    
+              
+            
+            
+      
     </div>
     )
   }

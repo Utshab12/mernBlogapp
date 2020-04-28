@@ -6,9 +6,7 @@ const blogSchema = mongoose.Schema({
     type: String
   },
   content : {
-    type: String,
-    required: true,
-    trim: true
+    type: String
   },
   title: {
     type: String

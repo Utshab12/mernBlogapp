@@ -23,7 +23,6 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
     trim: true,
-    unique: true,
     validate(value){
       if(!validator.isEmail(value)){
         throw new Error("Email is invalid!")
@@ -33,11 +32,11 @@ const userSchema = mongoose.Schema({
   password: {
     type: String,
     required: true,
-    validate(value){
-      if(value.length<8){
-        throw new Error("Password length must be 8 characters!")
-      }
-    }  
+    // validate(value){
+    //   if(value.length<8){
+    //     throw new Error("Password length must be 8 characters!")
+    //   }
+    // }  
   },
   tokens: [{
     token:{
