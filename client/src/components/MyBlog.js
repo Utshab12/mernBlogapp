@@ -16,23 +16,23 @@ class MyBlog extends Component {
     }
   }
   componentDidMount() {
-    axios.get(`${this.state.path}/blogs`).then((res)=>{
-      
-      var data = localStorage.getItem("data")
-      console.log(data)
-      res.data.blogs.map((blog)=>{
-        
-        if(blog.creator == data){
-           this.state.blogs.push(blog)
-          console.log(blog)
-        }
+    var data = localStorage.getItem("data")
+    console.log(data)
+    axios.get(`${this.state.path}/blogs/${data}`).then((res)=>{
+      console.log(res)
+      this.setState({
+        blogs : res.data  
       })
-      // this.setState({
-      //   blogs : myblog
-      // })
-    })
+    //   res.data.blogs.map((blog)=>{
+        
+    //     if(blog.creator == data){
+    //        this.state.blogs.push(blog)
+    //       // console.log(blog)
+    //     }
+    //   })
+    //   })
     // console.log(this.state.blogs)
-  }
+  })}
   changePic = (e) =>{
     
     const file = e.target.files

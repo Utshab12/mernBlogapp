@@ -118,4 +118,16 @@ router.get('/blogs', async(req, res)=>{
   }
 })
 
+
+// get api
+router.get('/blogs/:id', async(req, res)=>{
+  try{
+    const blogs = await Blog.find({creator : req.params.id})
+    // const feedback = await Feedback.find()
+    res.status(200).send(blogs)
+  }catch(e){
+    res.status(400).send(e)
+  }
+})
+
 module.exports = router
