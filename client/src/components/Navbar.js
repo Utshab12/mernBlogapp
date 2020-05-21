@@ -21,7 +21,7 @@ class Navbars extends Component{
 
   logoutuser = () =>{
     
-    axios.post(`http://localhost:5000/user/logout`,'',
+    axios.post(`https://boiling-savannah-08172.herokuapp.com/user/logout`,'',
     {
         headers: {
             'Authorization': localStorage.getItem('token'),

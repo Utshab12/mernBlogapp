@@ -10,7 +10,7 @@ class CreateBlog extends Component {
   constructor(){
     super();
     this.state = {
-      path : "http://localhost:5000",
+      path : "https://boiling-savannah-08172.herokuapp.com",
       blogs : [],
       image : ''
     }
@@ -45,7 +45,7 @@ class CreateBlog extends Component {
       formdata.append('title', bloggy.title)
       formdata.append('image', bloggy.image)
 
-    axios.post(`http://localhost:5000/user/blog`,  formdata ,
+    axios.post(`https://boiling-savannah-08172.herokuapp.com/user/blog`,  formdata ,
     {
         headers: {
             'Authorization': localStorage.getItem("token"),

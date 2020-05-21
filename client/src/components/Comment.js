@@ -31,7 +31,7 @@ constructor () {
         comments: comment
       }
       alert(comment)
-      axios.post(`http://localhost:5000/blog/comment/${blogId}`,  obj ,
+      axios.post(`https://boiling-savannah-08172.herokuapp.com/blog/comment/${blogId}`,  obj ,
     {
         headers: {
             'Authorization': localStorage.getItem("token"),

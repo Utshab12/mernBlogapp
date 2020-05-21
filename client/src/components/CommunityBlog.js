@@ -9,7 +9,7 @@ class CommunityBlog extends Component {
   constructor(){
     super();
     this.state = {
-      path : "https://blogserver1.herokuapp.com",
+      path : "https://boiling-savannah-08172.herokuapp.com",
       blogs : [],
       feedbacks : []
     }

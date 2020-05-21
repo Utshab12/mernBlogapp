@@ -10,7 +10,7 @@ class MyBlog extends Component {
   constructor(){
     super();
     this.state = {
-      path : "http://localhost:5000",
+      path : "https://boiling-savannah-08172.herokuapp.com",
       blogs : [],
       image : ''
     }
@@ -62,7 +62,7 @@ class MyBlog extends Component {
       formdata.append('title', bloggy.title)
       formdata.append('image', bloggy.image)
 
-    axios.post(`http://localhost:5000/user/blog`,  formdata ,
+    axios.post(`https://boiling-savannah-08172.herokuapp.com/user/blog`,  formdata ,
     {
         headers: {
             'Authorization': localStorage.getItem("token"),
@@ -78,7 +78,7 @@ class MyBlog extends Component {
 
   deleteblog = (val)=>{
 
-    axios.delete(`http://localhost:5000/user/blog/del/${val}`,
+    axios.delete(`https://boiling-savannah-08172.herokuapp.com/user/blog/del/${val}`,
     {
         headers: {
             'Authorization': localStorage.getItem("token"),

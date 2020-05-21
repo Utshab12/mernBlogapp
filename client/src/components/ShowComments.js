@@ -13,7 +13,7 @@ class ShowComments extends Component{
     console.log(userid)
     console.log(userid)
     if(this.props.data.creator === userid ){
-      axios.delete(`http://localhost:5000/blog/comment/del/${val}`,
+      axios.delete(`https://boiling-savannah-08172.herokuapp.com/blog/comment/del/${val}`,
       {
           headers: {
               'Authorization': localStorage.getItem("token"),

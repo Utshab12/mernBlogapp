@@ -10,7 +10,7 @@ class EditBlog extends Component {
   constructor(props){
     super();
     this.state = {
-      path : "http://localhost:5000",
+      path : "https://boiling-savannah-08172.herokuapp.com",
       blogs : [],
       image : '',
       blog : props.match.params.id
@@ -47,7 +47,7 @@ class EditBlog extends Component {
     if(bloggy.image !== ""){
       formdata.append('image', bloggy.image)
     }
-    axios.patch(`http://localhost:5000/user/blog/edit/${this.state.blog}`,formdata,
+    axios.patch(`https://boiling-savannah-08172.herokuapp.com/user/blog/edit/${this.state.blog}`,formdata,
     {
         headers: {
             'Authorization': localStorage.getItem("token"),

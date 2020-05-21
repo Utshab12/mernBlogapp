@@ -75,7 +75,7 @@ class SignUp extends Component{
         email : this.state.email,
         password : this.state.password
       }
-      axios.post(`http://localhost:5000/user`, user).then((res)=>{
+      axios.post(`https://boiling-savannah-08172.herokuapp.com/user`, user).then((res)=>{
         this.setState({
           data : res.data.user._id,
           token: res.data.token

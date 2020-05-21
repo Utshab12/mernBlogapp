@@ -9,7 +9,7 @@ class Blog extends Component{
   constructor(){
     super();
     this.state = {
-      path : "https://blogserver1.herokuapp.com",
+      path : "https://boiling-savannah-08172.herokuapp.com",
       blogs : [],
       feedbacks : []
     }
@@ -36,7 +36,7 @@ class Blog extends Component{
           <Col sm={8} >
        
             <Card  >
-            <CardImg top style={{ height: "200px", width:"100%"}} src={`https://blogserver1.herokuapp.com/${this.props.data.image}`} alt="Card image cap" />
+            <CardImg top style={{ height: "200px", width:"100%"}} src={`https://boiling-savannah-08172.herokuapp.com/${this.props.data.image}`} alt="Card image cap" />
             <CardBody>
                 <CardTitle style={{fontWeight: "bold"}}>{this.props.data.title}</CardTitle>
               <CardText>{this.props.data.content}</CardText>
